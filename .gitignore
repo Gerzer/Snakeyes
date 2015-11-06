@@ -55,7 +55,3 @@ docs/_build/
 
 # PyBuilder
 target/
-
-#User code files
-usercode-dev.py
-usercode.pyc
