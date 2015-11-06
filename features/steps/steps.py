@@ -1,8 +1,12 @@
 from behave import *
 import random
 
-level_file = open("levels.txt", "r")
-current_level = int(level_file.read())
+level_file = open("levels.txt", "w+")
+try:
+    current_level = int(level_file.read())
+except ValueError:
+    level_file.write("1")
+    current_level = 1
 level_file.close()
 
 import usercode
